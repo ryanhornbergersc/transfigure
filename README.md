@@ -19,3 +19,7 @@ Fork the repo, make your changes, issue a pull request.
 # Discussion
 
 Feel free to create an issue in Github.
+
+# Screenshots
+
+[![2015-09-24](https://kirkouimet.github.io/transfigure/images/github/screenshots/2015-09-24-a.png)]
