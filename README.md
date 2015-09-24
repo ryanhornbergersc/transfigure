@@ -1,3 +1,5 @@
+[![Transfigure Logo](https://kirkouimet.github.io/transfigure/images/github/logo.png)](http://kirkouimet.github.io/transfigure)
+
 # Live Version
 
 http://kirkouimet.github.io/transfigure/
