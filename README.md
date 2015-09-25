@@ -14,7 +14,7 @@ As engineers contribute the game, other engineers and spectators can watch the g
 
 # Contributing
 
-Fork the repo, make your changes, issue a pull request.
+Fork the repo, make changes, issue a pull request. Be brave! Don't be afraid to refactor. Rename things. Add files. Remove files. Restructure. Anything is fair game.
 
 # Discussion
 
