@@ -59,23 +59,6 @@ Player.prototype.findAndExecuteNextMove = function() {
 	var hasVisitedLeft = this.hasVisited(this.x - 1, this.y);
 	var hasVisitedRight = this.hasVisited(this.x + 1, this.y);
 
-	// Random
-	//var possibleMoves = [];
-	//if(canMoveUp) {
-	//	possibleMoves.push('Up');
-	//}
-	//if(canMoveDown) {
-	//	possibleMoves.push('Down');
-	//}
-	//if(canMoveLeft) {
-	//	possibleMoves.push('Left');
-	//}
-	//if(canMoveRight) {
-	//	possibleMoves.push('Right');
-	//}
-	//var nextMoveIndex = Math.floor(Math.random() * (possibleMoves.length - 0)) + 0;
-	//this['move'+possibleMoves[nextMoveIndex]]();
-	
 	// First preference is to move down
 	if(canMoveDown && !hasVisitedDown) {
 		this.moveDown();
@@ -102,6 +85,8 @@ Player.prototype.findAndExecuteNextMove = function() {
 		var previousMove = this.moveHistory.pop();
 		this.move(previousMove.x, previousMove.y);
 	}
+
+	this['move'+possibleMoves[nextMoveIndex]]();
 }
 Player.prototype.move = function(x, y) {
 	this.activeCellElement.removeClass('active');
@@ -175,5 +160,5 @@ Player.prototype.play = function() {
 		else {
 			console.log('Out of moves', this.moveCount);
 		}
-	}.bind(this), 200);
+	}.bind(this), 250);
 }

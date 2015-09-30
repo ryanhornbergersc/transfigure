@@ -96,7 +96,7 @@ Game.prototype.playLevel = function(levelIndex) {
   // Get the level
   var level = this.levels[levelIndex];
 
-  level.map = this.generateMap(11, 11);
+  level.map = this.generateMap(15, 25);
 
   // Render the level
   this.renderLevel(level);
@@ -109,7 +109,7 @@ Game.prototype.playLevel = function(levelIndex) {
 Game.prototype.generateMap = function(height, width) {
 	var map = [];
 
-	// Generate an empty map
+	// Generate a map
 	for(var y = 0; y < height; y++) {
 		map[y] = [];
 		for(var x = 0; x < width; x++) {
@@ -121,6 +121,8 @@ Game.prototype.generateMap = function(height, width) {
 			}
 		}
 	}
+
+	//return map;
 
 	// Intialize
 	var movesHistory = [];
