@@ -160,5 +160,5 @@ Player.prototype.play = function() {
 		else {
 			console.log('Out of moves', this.moveCount);
 		}
-	}.bind(this), 250);
+	}.bind(this), 50);
 }
